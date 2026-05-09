@@ -1,4 +1,4 @@
-const paginas = [
+const paginasS = [
     { titulo: 'Home', ruta: '/index.html' },
     { titulo: "PC's", ruta: '/pages/categorias/categoria1.html' },
     { titulo: 'Monitores', ruta: '/pages/categorias/categoria2.html' },
