@@ -3,27 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Tienda Virtual - Home</title>
 </head>
 <body>
 
-    <nav>
-        <div class="logo-container">
-            <img src="./assets/logo.webp" alt="Logo" width="50">
-            <h1>Tienda Virtual</h1>
-        </div>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="categoria1.html">PC's</a>
-            <a href="categoria2.html">Monitores</a>
-            <a href="categoria3.html">Periféricos</a>
-            <a href="registro.html">Registro</a>
-            <a href="login.html">Login</a>
-            <a href="#">Logout</a>
-        </div>
-    </nav>
+    <nav></nav>
 
     <main>
         <section class="main-banner">
@@ -34,34 +19,59 @@
         <section class="products-grid">
             
             <article class="product-card">
-                <img src="./assets/pc.webp" alt="Producto Destacado"> 
+                <img src="/images/pc.webp" alt="Producto Destacado"> 
                 <div class="card-body">
                     <h3>PC Gamer</h3>
+                    <p class="product-description">Equipada con Ryzen 5, 16GB RAM y placa de video RTX.</p>
                     <span class="price">$2.100.000</span>
-                    <button>Ver Detalles</button>
+                    
+                    <div class="quantity-selector">
+                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
+                    </div>
+                    
+                    <button class="btn-add">Añadir al carrito</button>
                 </div>
             </article>
 
             <article class="product-card">
-                <img src="./assets/monitor.webp" alt="Producto Destacado">
+                <img src="/images/monitor.webp" alt="Producto Destacado">
                 <div class="card-body">
                     <h3>Monitor 180Hz</h3>
+                    <p class="product-description">Panel IPS de 24 pulgadas, 1ms de respuesta y colores vibrantes.</p>
                     <span class="price">$700.000</span>
-                    <button>Ver Detalles</button>
+                    
+                    <div class="quantity-selector">
+                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
+                    </div>
+
+                    <button class="btn-add">Añadir al carrito</button>
                 </div>
             </article>
 
             <article class="product-card">
-                <img src="./assets/mouse.webp" alt="Producto Destacado">
+                <img src="/images/mouse.webp" alt="Producto Destacado">
                 <div class="card-body">
-                    <h3>Teclado Mecánico</h3>
+                    <h3>Mouse Gamer</h3>
+                    <p class="product-description">Sensor óptico de alta precisión y luces RGB personalizables.</p>
                     <span class="price">$75.000</span>
-                    <button>Ver Detalles</button>
+                    
+                    <div class="quantity-selector">
+                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
+                    </div>
+
+                    <button class="btn-add">Añadir al carrito</button>
                 </div>
             </article>
 
         </section>
     </main>
+    <script src="/js/navbar.js"></script>
 
 </body>
 </html>
