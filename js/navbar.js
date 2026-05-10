@@ -1,8 +1,8 @@
 const paginas = [
-    { titulo: 'Home', ruta: '/index.html' },
-    { titulo: "PC's", ruta: '/pages/categorias/categoria1.html' },
-    { titulo: 'Monitores', ruta: '/pages/categorias/categoria2.html' },
-    { titulo: 'Perifericos', ruta: '/pages/categorias/categoria3.html' }
+    { titulo: 'Home', ruta: 'index.html' },
+    { titulo: "PC's", ruta: 'pages/categorias/categoria1.html' },
+    { titulo: 'Monitores', ruta: 'pages/categorias/categoria2.html' },
+    { titulo: 'Perifericos', ruta: 'pages/categorias/categoria3.html' }
 ];
 
 function cargarNavbar() {
