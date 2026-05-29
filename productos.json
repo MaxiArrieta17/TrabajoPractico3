@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "titulo": "PC Gamer A",
+    "descripcion": "Procesador i5, 8GB RAM, SSD 480GB.",
+    "precio": 900000,
+    "imagen": "images/pc.webp",
+    "categoria": "pcs"
+  },
+  {
+    "id": 2,
+    "titulo": "PC Gamer B",
+    "descripcion": "Procesador i7, 16GB RAM, SSD 1TB.",
+    "precio": 1350900,
+    "imagen": "images/pc.webp",
+    "categoria": "pcs"
+  },
+  {
+    "id": 3,
+    "titulo": "PC Gamer C",
+    "descripcion": "Procesador Ryzen 9, 32GB RAM, RTX 4080.",
+    "precio": 2100000,
+    "imagen": "images/pc.webp",
+    "categoria": "pcs"
+  },
+  {
+    "id": 4,
+    "titulo": "Monitor A",
+    "descripcion": "24 pulgadas, Full HD, 75Hz, Panel IPS.",
+    "precio": 450000,
+    "imagen": "images/monitor.webp",
+    "categoria": "monitores"
+  },
+  {
+    "id": 5,
+    "titulo": "Monitor B",
+    "descripcion": "27 pulgadas, 4K Ultra HD, 144Hz, curvo.",
+    "precio": 700000,
+    "imagen": "images/monitor.webp",
+    "categoria": "monitores"
+  },
+  {
+    "id": 6,
+    "titulo": "Monitor C",
+    "descripcion": "32 pulgadas, QHD, 165Hz.",
+    "precio": 500000,
+    "imagen": "images/monitor.webp",
+    "categoria": "monitores"
+  },
+  {
+    "id": 7,
+    "titulo": "Mouse A",
+    "descripcion": "Sensor óptico 3200 DPI, luces RGB, 6 botones.",
+    "precio": 500000,
+    "imagen": "images/mouse.webp",
+    "categoria": "perifericos"
+  },
+  {
+    "id": 8,
+    "titulo": "Mouse B",
+    "descripcion": "Inalámbrico, ergonómico, batería de larga duración.",
+    "precio": 75000,
+    "imagen": "images/mouse.webp",
+    "categoria": "perifericos"
+  },
+  {
+    "id": 9,
+    "titulo": "Mouse C",
+    "descripcion": "Compacto, ideal para oficina y viajes.",
+    "precio": 20500,
+    "imagen": "images/mouse.webp",
+    "categoria": "perifericos"
+  }
+]

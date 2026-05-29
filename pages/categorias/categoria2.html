@@ -16,63 +16,12 @@
             <p>Los mejores productos seleccionados para vos.</p>
         </section>
 
-        <section class="products-grid">
-            
-            <article class="product-card">
-                <img src="../../images/monitor.webp" alt="Monitor A">
-                <div class="card-body">
-                    <h3>Monitor A</h3>
-                    <p class="product-description">24 pulgadas, Full HD, 75Hz, Panel IPS.</p>
-                    <span class="price">$450.000</span>
-                    
-                    <div class="quantity-selector">
-                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
-                        <input type="number" value="1" min="1" readonly>
-                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
-                    </div>
-
-                    <button class="btn-add">Ver detalle</button>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <img src="../../images/monitor.webp" alt="Monitor B">
-                <div class="card-body">
-                    <h3>Monitor B</h3>
-                    <p class="product-description">27 pulgadas, 4K Ultra HD, 144Hz, curvo.</p>
-                    <span class="price">$700.000</span>
-                    
-                    <div class="quantity-selector">
-                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
-                        <input type="number" value="1" min="1" readonly>
-                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
-                    </div>
-
-                    <button class="btn-add">Ver detalle</button>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <img src="../../images/monitor.webp" alt="Monitor C">
-                <div class="card-body">
-                    <h3>Monitor C</h3>
-                    <p class="product-description">32 pulgadas, QHD, 165Hz.</p>
-                    <span class="price">$500.000</span>
-                    
-                    <div class="quantity-selector">
-                        <button class="btn-qty" type="button" onclick="disminuirCantidad(this)">-</button>
-                        <input type="number" value="1" min="1" readonly>
-                        <button class="btn-qty" type="button" onclick="aumentarCantidad(this)">+</button>
-                    </div>
-
-                    <button class="btn-add">Ver detalle</button>
-                </div>
-            </article>
-
-        </section>
+        <section class="products-grid" id="contenedor-monitores">
+            </section>
     </main>
 
     <script src="../../js/navbar.js"></script>
+    <script src="../../js/categorias.js"></script>
 
 </body>
 </html>
