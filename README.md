@@ -7,3 +7,4 @@ Incluye páginas de inicio, login, registro y categorías.
 Se le agrega un mejor estilo utilizado CSS y SASS principalmente.
 Se suma JavaScript asi como estructuras de componentes.
 Incorpora el uso de JSON.
+Se finaliza con el trabajo y se realiza la entrega final.
