@@ -18,9 +18,14 @@ function cargarCarrito() {
         const subtotal = producto.precio * producto.cantidad;
         totalGeneral += subtotal;
 
+        let rutaImagenCorrecta = producto.imagen;
+        if (!rutaImagenCorrecta.startsWith('../')) {
+            rutaImagenCorrecta = '../../' + rutaImagenCorrecta;
+        }
+
         htmlCards += `
             <article class="product-card">
-                <img src="${producto.imagen}" alt="${producto.titulo}">
+                <img src="${rutaImagenCorrecta}" alt="${producto.titulo}">
                 <div class="card-body">
                     <h3>${producto.titulo}</h3>
                     <p class="product-description">Cantidad: ${producto.cantidad} unidad(es)</p>
@@ -37,19 +42,28 @@ function cargarCarrito() {
     }
 }
 
-function configurarBotonVaciar() {
+function configurarBotonesAccion() {
     const botonVaciar = document.getElementById('vaciar-carrito-btn');
     if (botonVaciar) {
         botonVaciar.addEventListener('click', () => {
             if (confirm('¿Estás seguro de que querés vaciar tu carrito?')) {
                 localStorage.removeItem('carritoCompras');
-                cargarCarrito();
+                cargarCarrito(); 
             }
+        });
+    }
+
+    const botonTerminar = document.getElementById('terminar-compra-btn');
+    if (botonTerminar) {
+        botonTerminar.addEventListener('click', () => {
+            alert('¡Gracias por tu compra! Tu pedido ha sido procesado con éxito.');
+            localStorage.removeItem('carritoCompras');
+            window.location.href = '../../index.html'; 
         });
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarCarrito();
-    configurarBotonVaciar();
+    configurarBotonesAccion();
 });
